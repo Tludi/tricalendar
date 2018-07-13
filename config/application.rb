@@ -10,7 +10,8 @@ module Tricalendar
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.1
-
+    config.autoload_paths << "#{Rails.root}/lib"
+    
     config.beginning_of_week = :sunday
 
     # Settings in config/environments/* take precedence over those specified here.

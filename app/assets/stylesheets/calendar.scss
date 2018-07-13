@@ -1,3 +1,13 @@
 // Place all the styles related to the calendar controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$daywidth: 50px;
+
+.day { 
+  width: $daywidth; 
+  min-width: $daywidth;
+  max-width: $daywidth;
+  height: 150px;
+  border: solid 1px #dee2e6;
+}

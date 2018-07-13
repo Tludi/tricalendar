@@ -1,14 +1,14 @@
 
 <div class="container">
 	<h1>Tri Calendar</h1>
-</div>
-
+<!-- 
 <%= month_calendar do |date| %>
 	<%= date.day %>
-<% end -%>
+<% end -%> -->
 
 <br><hr><br>
 
-<%= week_calendar number_of_weeks: 2 do |date| %>
-	<%= date %>
+<%= SimpleCalendar::ThreeMonthCalendar.new(self, {}).render do |date| %>
+	<%= date.day %>
 <% end %>
+</div>
